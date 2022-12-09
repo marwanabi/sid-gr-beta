@@ -164,9 +164,9 @@ ${window.qzInstance.CardProgressDots()}
     <button>
       <ul>
         <li><p>Share</p></li>
-        <li><img src="assets/images/twitter.svg"/></li>
-        <li onclick="return fbs_click()" target="_blank"><img src="assets/images/facebook.svg"/></li>
-        <li><img src="assets/images/linkedin.svg"/></li> 
+        <li onclick="return twitter_click()"  target="_blank"><img src="assets/images/twitter.svg"/></li>
+        <li onclick="return facebook_click()" target="_blank"><img src="assets/images/facebook.svg"/></li>
+        <li onclick="return linkedin_click()"  target="_blank"><img src="assets/images/linkedin.svg"/></li> 
       </ul>
     </button>
     <button id="retake" onclick="location.reload();">
