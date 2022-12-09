@@ -286,6 +286,10 @@ button {
   width: 35px;
 }
 
+.sid-Card-Question button.correct {
+  animation: correct 0.5s forwards;
+} 
+
 .sid-Card-Question .correct::after {
   content: '';
   height: 35px;
@@ -450,6 +454,16 @@ button {
   }
 }
 
+@keyframes correct {
+from{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+to{
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+}
 #sid-grainger-quiz .sid-Card-Fact,
 #sid-grainger-quiz .sid-Card-Question {
   max-width: 888px;

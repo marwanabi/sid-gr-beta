@@ -59,10 +59,25 @@
         margin: 0 auto 100px;
         width: calc(100% - 20%);
     }
+    #sid-dots{
+        display: none;
+    }
 }
 
 @media (max-width:767px) {
+    #sid-grainger-quiz h1{
+        font-size: 45px; 
+    }
 
+    #sid-grainger-quiz h1 br{
+        display: none;
+    }
+    #sid-grainger-quiz .sid-Card-Question h2{
+        font-size: 32px;
+    }
+    #sid-grainger-quiz .sid-Card-fact p{
+        font-size: 20px;
+    }
     #sid-grainger-quiz .sid-Card-Fact,
     #sid-grainger-quiz .sid-Card-Question {
         padding: 40px 30px;
