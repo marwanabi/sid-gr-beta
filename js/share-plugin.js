@@ -1,9 +1,8 @@
 var pageLink = window.location.href;
-var pageTitle = 'Can You Ace This True or False Battery Quiz?';
-console.log(pageTitle);
+var pageTitle = String(document.title).replace(/\&/g, '%26');
 
-function facebook_click() { window.open(`http://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
-      
-function twitter_click() { window.open(`https://twitter.com/intent/status?text=${pageTitle}&url=${pageLink}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+function facebook_click() { window.open(`http://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`, 'sharer', 'toolbar=0,status=0,width=626,height=436'); return false; }
 
-function linkedin_click() { window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+function twitter_click() { window.open(`https://twitter.com/intent/status?text=${pageTitle}&status=${pageLink}`, 'sharer', 'toolbar=0,status=0,width=626,height=436'); return false; }
+
+function linkedin_click() { window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`, 'sharer', 'toolbar=0,status=0,width=626,height=436'); return false; }
