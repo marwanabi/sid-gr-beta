@@ -124,11 +124,11 @@ button {
   justify-self: center;
 }
 
-#sid-dots {
+#sid-grainger-quiz #sid-dots {
   margin-top: -39px;
 }
 
-#sid-dots li {
+#sid-grainger-quiz #sid-dots li {
   display: inline-block;
   border: 1px solid black;
   padding: 7px;
@@ -137,13 +137,13 @@ button {
   transition: all 0.3s;
 }
 
-#sid-dots li:first-child,
-#sid-dots li.current+li {
+#sid-grainger-quiz #sid-dots li:first-child,
+#sid-grainger-quiz #sid-dots li.current+li {
   background-color: black;
   transition: all 0.3s;
 }
 
-#sid-dots li:first-child {
+#sid-grainger-quiz #sid-dots li:first-child {
   margin-left: 0;
 }
 
@@ -215,7 +215,7 @@ button {
   width: 215px;
 }
 
-.button-wrapper {
+#sid-grainger-quiz .button-wrapper {
   bottom: 45px;
   display: flex;
   position: absolute;
@@ -265,11 +265,11 @@ button {
   transition: transform 0.3s;
 }
 
-.sid-Card-Question .wrong {
+#sid-grainger-quiz .sid-Card-Question .wrong {
   animation: buzz 0.5s forwards;
 }
 
-.sid-Card-Question .wrong::after {
+#sid-grainger-quiz .sid-Card-Question .wrong::after {
   content: '';
   height: 35px;
   position: absolute;
@@ -286,11 +286,11 @@ button {
   width: 35px;
 }
 
-.sid-Card-Question button.correct {
+#sid-grainger-quiz .sid-Card-Question button.correct {
   animation: correct 0.5s forwards;
-} 
+}
 
-.sid-Card-Question .correct::after {
+#sid-grainger-quiz .sid-Card-Question .correct::after {
   content: '';
   height: 35px;
   position: absolute;
@@ -307,13 +307,13 @@ button {
   width: 35px;
 }
 
-.sid-Card-Result {
+#sid-grainger-quiz .sid-Card-Result {
   background-color: var(--red);
   height: 100%;
   position: relative;
 }
 
-.sid-Card-Result .result-container {
+#sid-grainger-quiz .sid-Card-Result .result-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -325,17 +325,17 @@ button {
   width: 100%;
 }
 
-.sid-Card-Result .result-container p {
+#sid-grainger-quiz .sid-Card-Result .result-container p {
   font-size: 24px;
 }
 
-.sid-Card-Result .result-container h2 {
+#sid-grainger-quiz .sid-Card-Result .result-container h2 {
   font-family: 'Helvetica-Neue-CondensedBold', sans-serif;
   font-size: 160px;
   margin-bottom: 5px;
 }
 
-.sid-Card-Result .progress {
+#sid-grainger-quiz .sid-Card-Result .progress {
   background-image: url(../assets/images/progress.svg);
   background-repeat: repeat;
   background-color: var(--grey);
@@ -346,7 +346,7 @@ button {
   width: 100%;
 }
 
-.sid-Card-Result .progress>div {
+#sid-grainger-quiz .sid-Card-Result .progress>div {
   background-color: var(--black);
   position: absolute;
   top: 50%;
@@ -355,41 +355,49 @@ button {
   transform: translate(0, -50%);
 }
 
-.sid-Card-Result button {
+#sid-grainger-quiz .sid-Card-Result button {
   background-color: var(--white);
   padding: 14px 0;
   width: 230px;
 }
 
-.sid-Card-Result button#retake {
+#sid-grainger-quiz .sid-Card-Result button#retake {
   margin-left: 25px;
   width: 195px;
 }
 
-.sid-Card-Result button#retake ul li img {
+#sid-grainger-quiz .sid-Card-Result button#retake ul li img {
   margin-left: 20px;
 }
 
-.sid-Card-Result button ul {
+#sid-grainger-quiz .sid-Card-Result button ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sid-Card-Result ul li p {
+#sid-grainger-quiz .sid-Card-Result ul li p {
   font-weight: bold;
   font-size: 20px;
 }
 
-.sid-Card-Result ul li {
+#sid-grainger-quiz .sid-Card-Result ul li {
   list-style: none;
   display: inline-block;
 }
 
-.sid-Card-Result ul li img {
+#sid-grainger-quiz .sid-Card-Result ul li img {
   height: 24px;
   margin-left: 23px;
   width: auto;
+}
+
+#sid-grainger-quiz .sid-Card-Fact,
+#sid-grainger-quiz .sid-Card-Question {
+  max-width: 888px;
+  max-height: 418px;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes show {
@@ -455,19 +463,13 @@ button {
 }
 
 @keyframes correct {
-from{
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-to{
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-}
-#sid-grainger-quiz .sid-Card-Fact,
-#sid-grainger-quiz .sid-Card-Question {
-  max-width: 888px;
-  max-height: 418px;
-  width: 100%;
-  height: 100%;
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }

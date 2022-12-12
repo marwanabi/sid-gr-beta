@@ -3,9 +3,6 @@
     #sid-grainger-quiz #sid-grainger-wrapper,
     #sid-grainger-quiz .button-wrapper,
     #sid-grainger-quiz .sid-Card-Fact #next {
-        /* background-image: url('../assets/images/grainger_background.png'); 
-        background-size: cover; 
-        background-position: center; */
         position: initial;
         transform: none;
     }
@@ -19,7 +16,6 @@
 
     #sid-grainger-quiz .sid-Card-home {
         align-items: center;
-        /* background-image: none !important; */
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -51,50 +47,77 @@
         display: block;
         margin-top: 66px;
     }
+
     #sid-grainger-quiz .sid-Card-Fact #next {
         margin-top: 66px;
     }
 
-    #sid-grainger-quiz .sid-Card-Result .progress{
+    #sid-grainger-quiz .sid-Card-Result .progress {
         margin: 0 auto 100px;
         width: calc(100% - 20%);
     }
-    #sid-dots{
-        display: none;
+
+    #sid-grainger-quiz #sid-dots {
+        bottom: 10%;
+        left: 50%;
+        margin-top: initial;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    #sid-grainger-quiz #sid-dots li {
+        margin-left: 8px;
+        padding: 5px;
     }
 }
 
 @media (max-width:767px) {
-    #sid-grainger-quiz h1{
-        font-size: 45px; 
+    #sid-grainger-quiz h1 {
+        font-size: 45px;
     }
 
-    #sid-grainger-quiz h1 br{
+    #sid-grainger-quiz h1 br {
         display: none;
     }
-    #sid-grainger-quiz .sid-Card-Question h2{
+
+    #sid-grainger-quiz .sid-Card-Question h2 {
         font-size: 32px;
     }
-    #sid-grainger-quiz .sid-Card-fact p{
+
+    #sid-grainger-quiz .sid-Card-Question button {
+        font-size: 18px;
+    }
+
+    #sid-grainger-quiz .sid-Card-Fact h3 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    #sid-grainger-quiz .sid-Card-fact p,
+    #sid-grainger-quiz p {
         font-size: 20px;
     }
+
     #sid-grainger-quiz .sid-Card-Fact,
     #sid-grainger-quiz .sid-Card-Question {
         padding: 40px 30px;
     }
 
-    #sid-grainger-quiz .button-wrapper {
-        margin-top: 66px;
+    #sid-grainger-quiz .button-wrapper,
+    #sid-grainger-quiz .sid-Card-Fact #next {
+        margin-top: 45px;
     }
 
     #sid-grainger-quiz .button-wrapper button {
         display: block;
         margin: 18px auto;
     }
-    #sid-grainger-quiz .sid-Card-Result .progress{
+
+    #sid-grainger-quiz .sid-Card-Result .progress {
         margin-bottom: 82px;
     }
-    #sid-grainger-quiz .sid-Card-Result button{
+
+    #sid-grainger-quiz .sid-Card-Result button {
         display: block;
         margin: 18px auto !important;
     }
