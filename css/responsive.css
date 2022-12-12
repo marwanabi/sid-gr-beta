@@ -36,16 +36,11 @@
 
     #sid-grainger-quiz .sid-Card-Fact,
     #sid-grainger-quiz .sid-Card-Question {
-        /* display: inline-block; */
         height: auto;
-        /* left: 50%; */
         max-width: none;
         max-height: none;
         margin: 0 auto;
         padding: 40px;
-        /* position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%); */
         width: calc(100% - 10%);
     }
 
