@@ -8,7 +8,13 @@
     }
 
     #sid-grainger-quiz #sid-grainger-container {
-        display: block;
+        display: -webkit-box;  
+        display: -moz-box;    
+        display: -ms-flexbox;  
+        display: -webkit-flex; 
+        display: flex; 
+        align-items: center;
+        justify-content: space-evenly;
         height: 100vh;
         max-width: none;
         position: relative;
@@ -30,16 +36,16 @@
 
     #sid-grainger-quiz .sid-Card-Fact,
     #sid-grainger-quiz .sid-Card-Question {
-        display: inline-block;
+        /* display: inline-block; */
         height: auto;
-        left: 50%;
+        /* left: 50%; */
         max-width: none;
         max-height: none;
         margin: 0 auto;
         padding: 40px;
-        position: absolute;
+        /* position: absolute;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
         width: calc(100% - 10%);
     }
 
@@ -58,11 +64,7 @@
     }
 
     #sid-grainger-quiz #sid-dots {
-        bottom: 10%;
-        left: 50%;
         margin-top: initial;
-        position: absolute;
-        transform: translate(-50%, -50%);
     }
 
     #sid-grainger-quiz #sid-dots li {
