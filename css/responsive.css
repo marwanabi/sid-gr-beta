@@ -8,11 +8,11 @@
     }
 
     #sid-grainger-quiz #sid-grainger-container {
-        display: -webkit-box;  
-        display: -moz-box;    
-        display: -ms-flexbox;  
-        display: -webkit-flex; 
-        display: flex; 
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
         align-items: center;
         justify-content: space-evenly;
         height: 100vh;
@@ -51,6 +51,10 @@
 
     #sid-grainger-quiz .sid-Card-Fact #next {
         margin-top: 66px;
+    }
+
+    #sid-grainger-quiz .sid-Card-Result {
+        width: 100%;
     }
 
     #sid-grainger-quiz .sid-Card-Result .progress {

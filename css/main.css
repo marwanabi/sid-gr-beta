@@ -171,6 +171,7 @@ button {
   background-color: var(--white);
   border: none;
   border-radius: 10px;
+  color: var(--black);
   cursor: pointer;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 20px;
@@ -335,6 +336,10 @@ button {
 
 #sid-grainger-quiz .sid-Card-Result .result-container p {
   font-size: 24px;
+}
+
+#sid-grainger-quiz .sid-Card-Result .result-container li p {
+  color: var(--black);
 }
 
 #sid-grainger-quiz .sid-Card-Result .result-container h2 {
