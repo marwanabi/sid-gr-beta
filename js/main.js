@@ -165,22 +165,23 @@ ${window.qzInstance.CardProgressDots()}
     <ul>
     <li><p>Share</p></li>
     <li> 
-    <a href="http://twitter.com/share?url=${window.location.href}" title=${document.title} target="_blank"">
-    <img src="assets/images/twitter.svg"/>
+    <a href="http://twitter.com/share?url=${window.location.href}" target="_blank"">
+    <img src="assets/images/twitter.svg" />
     </a>
     </li>
     <li>
-    <a href="http://www.facebook.com/sharer.php?u=${window.location.href}&t=${document.title}">
-    <img src="assets/images/facebook.svg"/></li>
+    <a href="http://www.facebook.com/sharer.php?u=${window.location.href}">
+    <img src="assets/images/facebook.svg" />
     </a>
+    </li>
     <li>
     <a href="http://www.linkedin.com/" onclick="popUp=window.open(
-      'http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${document.title}',
+      'http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}',
       'popupwindow',
       'scrollbars=yes,width=800,height=400');
   popUp.focus();
   return false">
-    <img src="assets/images/linkedin.svg"/>
+    <img src="assets/images/linkedin.svg" />
     </a>
     </li> 
   </ul>
