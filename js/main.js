@@ -181,6 +181,7 @@ ${window.qzInstance.CardProgressDots()}
   popUp.focus();
   return false">
     <img src="assets/images/linkedin.svg"/>
+    </a>
     </li> 
   </ul>
     </button>
