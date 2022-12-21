@@ -8,53 +8,53 @@ window.qzInstance = {
       answer: false,
       fact: "Chargers are designed for specific battery types, and mixing chargers or batteries could result in unexpected problems. Check the manufacturer’s website for instructions if you plan to charge your device or batteries using a new method."
     },
-    {
-      question:
-        "You can safely recycle the rechargeable batteries found in power tools.",
-      answer: true,
-      fact: "Once a battery is no longer useful, refer to the type and chemistry of the battery to help determine the best recycling options. Removable rechargeable batteries can be sent to special battery recycling centers, manufacturers that offer battery collection services, or local hazardous waste recycling programs."
-    },
-    {
-      question:
-        "More volts and amps in a battery indicate a more powerful tool.",
-      answer: false,
-      fact: "When it comes to power tools, volts and amps don’t tell the whole story. Everything in the tool, from the battery to the blade or bit, determines a battery’s power and overall efficiency. The tool’s motor, transmission and other components that provide power also greatly impact performance, in addition to the quality of the magnets in the motor, gears and more."
-    },
-    {
-      question: "It’s best to fully discharge your power tool battery before charging.",
-      answer: false,
-      fact: "You should always stop using a battery as soon as you feel a substantial decrease in power from the tool, preferably before it falls below a 20% charge. Completely running down a battery may lessen its ability to maintain a lasting charge."
-    },
-    {
-      question: "You should fully charge lithium-ion power tool batteries before storing.",
-      answer: false,
-      fact: "Fully charging a lithium-ion battery can shorten its lifespan and increase the risk of explosion and deterioration if exposed to high temperatures during storage. Storing power tool batteries with a partial charge level of 40% is recommended to help extend battery life."
-    },
-    {
-      question: "You should always remove the battery from your power tool before storing it.",
-      answer: true,
-      fact: "Leaving a battery in can cause a higher self-discharge rate that can harm your tool. Remember to remove the battery and store it in a safe spot after each use."
-    },
-    {
-      question: "Extreme heat is the biggest<br>enemy to battery life.",
-      answer: true,
-      fact: "While extreme temperatures (both hot and cold) can damage batteries, heat is the real enemy. Temperatures over 175°F can permanently damage a battery. Storing a battery in a cool, dry place can help extend battery life and make charging more efficient."
-    },
-    {
-      question: "The container you use to store your batteries should be made of metal to help protect from damage.",
-      answer: false,
-      fact: "The container in which you store your batteries should be made of plastic, glass, wood or any material but metal. Batteries can short-circuit if they come into contact with metal."
-    },
-    {
-      question: "Leaving your power tool on the<br>charger will drain its battery.",
-      answer: false,
-      fact: "In the past, this was true. However, as battery technology has evolved, some newer power tool chargers have a maintenance mode that allows batteries to stay in the charger, maintaining a full charge until the tool is needed."
-    },
-    {
-      question: "You can recondition<br>power tool batteries.",
-      answer: true,
-      fact: "It’s possible to recondition and rebuild an old power tool battery that has lost its charge. Check with the tool’s manufacturer to see if they offer a restoration or recycling program."
-    }
+    // {
+    //   question:
+    //     "You can safely recycle the rechargeable batteries found in power tools.",
+    //   answer: true,
+    //   fact: "Once a battery is no longer useful, refer to the type and chemistry of the battery to help determine the best recycling options. Removable rechargeable batteries can be sent to special battery recycling centers, manufacturers that offer battery collection services, or local hazardous waste recycling programs."
+    // },
+    // {
+    //   question:
+    //     "More volts and amps in a battery indicate a more powerful tool.",
+    //   answer: false,
+    //   fact: "When it comes to power tools, volts and amps don’t tell the whole story. Everything in the tool, from the battery to the blade or bit, determines a battery’s power and overall efficiency. The tool’s motor, transmission and other components that provide power also greatly impact performance, in addition to the quality of the magnets in the motor, gears and more."
+    // },
+    // {
+    //   question: "It’s best to fully discharge your power tool battery before charging.",
+    //   answer: false,
+    //   fact: "You should always stop using a battery as soon as you feel a substantial decrease in power from the tool, preferably before it falls below a 20% charge. Completely running down a battery may lessen its ability to maintain a lasting charge."
+    // },
+    // {
+    //   question: "You should fully charge lithium-ion power tool batteries before storing.",
+    //   answer: false,
+    //   fact: "Fully charging a lithium-ion battery can shorten its lifespan and increase the risk of explosion and deterioration if exposed to high temperatures during storage. Storing power tool batteries with a partial charge level of 40% is recommended to help extend battery life."
+    // },
+    // {
+    //   question: "You should always remove the battery from your power tool before storing it.",
+    //   answer: true,
+    //   fact: "Leaving a battery in can cause a higher self-discharge rate that can harm your tool. Remember to remove the battery and store it in a safe spot after each use."
+    // },
+    // {
+    //   question: "Extreme heat is the biggest<br>enemy to battery life.",
+    //   answer: true,
+    //   fact: "While extreme temperatures (both hot and cold) can damage batteries, heat is the real enemy. Temperatures over 175°F can permanently damage a battery. Storing a battery in a cool, dry place can help extend battery life and make charging more efficient."
+    // },
+    // {
+    //   question: "The container you use to store your batteries should be made of metal to help protect from damage.",
+    //   answer: false,
+    //   fact: "The container in which you store your batteries should be made of plastic, glass, wood or any material but metal. Batteries can short-circuit if they come into contact with metal."
+    // },
+    // {
+    //   question: "Leaving your power tool on the<br>charger will drain its battery.",
+    //   answer: false,
+    //   fact: "In the past, this was true. However, as battery technology has evolved, some newer power tool chargers have a maintenance mode that allows batteries to stay in the charger, maintaining a full charge until the tool is needed."
+    // },
+    // {
+    //   question: "You can recondition<br>power tool batteries.",
+    //   answer: true,
+    //   fact: "It’s possible to recondition and rebuild an old power tool battery that has lost its charge. Check with the tool’s manufacturer to see if they offer a restoration or recycling program."
+    // }
   ],
   score: 0,
   responses: [],
@@ -162,12 +162,27 @@ ${window.qzInstance.CardProgressDots()}
   </div>
   <div>
     <button>
-      <ul>
-        <li><p>Share</p></li>
-        <li onclick="return twitter_click()"  target="_blank"><img src="assets/images/twitter.svg"/></li>
-        <li onclick="return facebook_click()" target="_blank"><img src="assets/images/facebook.svg"/></li>
-        <li onclick="return linkedin_click()"  target="_blank"><img src="assets/images/linkedin.svg"/></li> 
-      </ul>
+    <ul>
+    <li><p>Share</p></li>
+    <li> 
+    <a href="http://twitter.com/share?url=${window.location.href}" title=${document.title} target="_blank"">
+    <img src="assets/images/twitter.svg"/>
+    </a>
+    </li>
+    <li>
+    <a href="http://www.facebook.com/sharer.php?u=${window.location.href}&t=${document.title}">
+    <img src="assets/images/facebook.svg"/></li>
+    </a>
+    <li>
+    <a href="http://www.linkedin.com/" onclick="popUp=window.open(
+      'http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${document.title}',
+      'popupwindow',
+      'scrollbars=yes,width=800,height=400');
+  popUp.focus();
+  return false">
+    <img src="assets/images/linkedin.svg"/>
+    </li> 
+  </ul>
     </button>
     <button id="retake" onclick="location.reload();">
       <ul>
